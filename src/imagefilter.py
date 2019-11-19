@@ -15,4 +15,11 @@ class ImageFilter():
         #if self.shape:
         #    do something
         # 
+        if self.shape:
+            image = cv2.resize(image, dsize = self.shape)
+        
+        #width = image.shape[0]
+        #image[ : width // 2 , : , : ] = 0
+        
+        
         return image
